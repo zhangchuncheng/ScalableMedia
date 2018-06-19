@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chuncheng.sample.media.video.ui.VideoPlayerView
+        android:id="@+id/vpv_scalable_media_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"/>
+
+    <!-- 视频进度条 -->
+    <RelativeLayout
+        android:id="@+id/rl_scalable_media_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/px74"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_scalable_media_black_70"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_scalable_media_play"
+            android:layout_width="@dimen/px34"
+            android:layout_height="@dimen/px34"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30"
+            android:src="@drawable/svg_scalable_media_pause"
+            tools:ignore="contentDescription"/>
+
+        <TextView
+            android:id="@+id/tv_scalable_media_play_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_toRightOf="@+id/iv_scalable_media_play"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_scalable_media_white"
+            android:textSize="@dimen/px22"
+            tools:text="00:00"/>
+
+        <SeekBar
+            android:id="@+id/sb_scalable_media_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_toLeftOf="@+id/tv_scalable_media_surplus_time"
+            android:layout_toRightOf="@+id/tv_scalable_media_play_time"
+            android:maxHeight="@dimen/px3"
+            android:minHeight="@dimen/px3"
+            android:progress="0"
+            android:progressDrawable="@drawable/scalable_media_seek_bar"
+            android:thumb="@drawable/scalable_media_seek_bar_selector"
+            android:thumbOffset="0dp"/>
+
+        <TextView
+            android:id="@+id/tv_scalable_media_surplus_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px20"
+            android:layout_toLeftOf="@+id/iv_scalable_media_screen_change"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_scalable_media_white"
+            android:textSize="@dimen/px22"
+            tools:text="-00:00"/>
+
+        <ImageView
+            android:id="@+id/iv_scalable_media_screen_change"
+            android:layout_width="@dimen/px26"
+            android:layout_height="@dimen/px30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/px30"
+            android:layout_marginRight="@dimen/px30"
+            android:src="@drawable/ic_scalable_media_play_full"
+            tools:ignore="contentDescription"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

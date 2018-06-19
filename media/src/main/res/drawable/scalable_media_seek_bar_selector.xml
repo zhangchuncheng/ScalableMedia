@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/color_scalable_media_white"/>
+            <stroke
+                android:width="@dimen/px8"
+                android:color="@color/color_scalable_media_white"/>
+            <size android:width="@dimen/px24"
+                  android:height="@dimen/px24"/>
+        </shape>
+    </item>
+
+    <!-- 普通无焦点状态 -->
+    <item android:state_focused="false" android:state_pressed="false">
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/color_scalable_media_white"/>
+            <stroke
+                android:width="@dimen/px8"
+                android:color="@color/color_scalable_media_white"/>
+            <size android:width="@dimen/px24"
+                  android:height="@dimen/px24"/>
+        </shape>
+    </item>
+
+</selector>

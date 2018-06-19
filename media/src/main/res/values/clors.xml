@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 颜色 -->
+    <!--#000000透明度70%-->
+    <color name="color_scalable_media_black_70">#4c000000</color>
+    <color name="color_scalable_media_white">#EDEDED</color>
+    <color name="color_scalable_media_gray">#CFCFCF</color>
+</resources>

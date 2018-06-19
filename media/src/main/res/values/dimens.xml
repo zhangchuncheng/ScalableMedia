@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 距离. -->
+    <dimen name="px8">8px</dimen>
+    <dimen name="px20">20px</dimen>
+    <dimen name="px28">28px</dimen>
+    <dimen name="px30">30px</dimen>
+    <dimen name="px40">40px</dimen>
+    <dimen name="px50">50px</dimen>
+    <dimen name="px70">70px</dimen>
+    <dimen name="px80">80px</dimen>
+    <dimen name="px100">100px</dimen>
+    <dimen name="px300">300px</dimen>
+    <dimen name="px500">500px</dimen>
+
+    <!-- 字体. -->
+    <dimen name="font10">10px</dimen>
+    <dimen name="font20">20px</dimen>
+    <dimen name="font28">28px</dimen>
+    <dimen name="font24">24px</dimen>
+    <dimen name="px3">3px</dimen>
+    <dimen name="px74">74px</dimen>
+    <dimen name="px24">24px</dimen>
+    <dimen name="px34">34px</dimen>
+    <dimen name="px22">22px</dimen>
+    <dimen name="px26">26px</dimen>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player_activtiy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <com.chuncheng.sample.media.video.ui.VideoPlayerView
+            android:id="@+id/video_player_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+        <com.chuncheng.sample.media.video.ui.VideoPlayerView
+            android:id="@+id/video_player_view_advertising"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/px100"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_layout_player">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_player"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="player"/>
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_player"
+                    android:gravity="center"
+                    android:text="start"/>
+
+                <Button
+                    android:id="@+id/btn_pause"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_player"
+                    android:layout_toEndOf="@+id/btn_start"
+                    android:gravity="center"
+                    android:text="pause"/>
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_start"
+                    android:gravity="center"
+                    android:text="stop"/>
+
+                <Button
+                    android:id="@+id/btn_seek_to"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_player"
+                    android:layout_toEndOf="@+id/btn_pause"
+                    android:gravity="center"
+                    android:text="seek_to"/>
+
+                <Button
+                    android:id="@+id/btn_full_screen"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_stop"
+                    android:gravity="center"
+                    android:text="full_screen"/>
+
+                <Button
+                    android:id="@+id/btn_jump"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_stop"
+                    android:layout_toEndOf="@+id/btn_full_screen"
+                    android:gravity="center"
+                    android:text="jump"/>
+
+                <Button
+                    android:id="@+id/btn_advertising_player"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_full_screen"
+                    android:gravity="center"
+                    android:text="advertising_player"/>
+
+                <Button
+                    android:id="@+id/btn_player_speed"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/btn_advertising_player"
+                    android:gravity="center"
+                    android:text="speed"/>
+
+                <EditText
+                    android:id="@+id/et_player_speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:layout_below="@+id/btn_advertising_player"
+                    android:layout_toEndOf="@+id/btn_player_speed"
+                    android:inputType="number|numberDecimal"/>
+
+                <EditText
+                    android:id="@+id/et_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:layout_below="@+id/et_player_speed"
+                    android:inputType="textMultiLine"
+                    android:hint="URL"
+                    tools:ignore="TextFields" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
